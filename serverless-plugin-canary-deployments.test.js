@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const chai = require('chai')
 const _ = require('lodash/fp')
-const { sync: getInstalledPathSync } = require('get-installed-path')
+const { getInstalledPathSync } = require('get-installed-path')
 const ServerlessCanaryDeployments = require('./serverless-plugin-canary-deployments')
 
 const serverlessPath = getInstalledPathSync('serverless', { local: true })
